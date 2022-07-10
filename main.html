@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Tic Tac Toe</title>
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="title-container">
+            <h2 class="title">Tic Tac Toe</h2>
+        </div>
+        <div class="players-info-container">
+            <div class="player-info-container">
+                <form class="form-container">
+                    <label for="name">Player 1</label>
+                    <input type="text" id="player-1-input" placeholder="Enter Name" autocomplete="off" required=""><br>
+                    <label for="name">Player 2</label>
+                    <input type="text" id="player-2-input" placeholder="Enter Name" autocomplete="off" required=""><br>
+                  </form>
+            </div>
+            <div id="player-turn-text" class="player-info-text">Nikos plays</div>
+        </div>
+        <div class="roll-dice-container">
+            <div class="info-dice-container">
+                <h2 class="roll-dice-title">Roll the dice to see who plays first!</h2>
+                <hr id="line">
+                <div class="dice">
+                    <ol class="die-list odd-roll" data-roll="1" id="die-1">
+                      <li class="die-item" data-side="1"></li>
+                      <li class="die-item" data-side="2"></li>
+                      <li class="die-item" data-side="3"></li>
+                      <li class="die-item" data-side="4"></li>
+                      <li class="die-item" data-side="5"></li>
+                      <li class="die-item" data-side="6"></li>
+                    </ol>
+                </div>
+                <button type="button" id="roll-button">Roll Dice</button>
+                <h2 id="say-who-plays-first"></h2>
+            </div>
+            <div class="game-board-container">
+                <div id="left-player-score-container">
+                    <h2 class="player-info-text" id="player-1-name">Player 1: Name</h2>
+                    <h2 class="player-info-text" id="player-1-marker">Marker: X</h2>
+                    <h2 class="player-info-text" id="player-1-score">Score: 0</h2>
+                </div>
+                <div class="game-board">
+                    <div class="layer-1">
+                        <div class="box" id="box1"></div>
+                        <div class="box" id="box2"></div>
+                        <div class="box" id="box3"></div>
+                    </div>
+                    <div class="layer-2">
+                        <div class="box" id="box4"></div>
+                        <div class="box" id="box5"></div>
+                        <div class="box" id="box6"></div>
+                    </div>
+                    <div class="layer-3">
+                        <div class="box" id="box7"></div>
+                        <div class="box" id="box8"></div>
+                        <div class="box" id="box9"></div>
+                    </div>
+                </div>
+                <div id="right-player-score-container">
+                    <h2 class="player-info-text" id="player-2-name">Player 2: Name</h2>
+                    <h2 class="player-info-text" id="player-2-marker">Marker: O</h2>
+                    <h2 class="player-info-text" id="player-2-score">Score: 0</h2>
+                </div>
+            </div>
+            <div class="game-over">
+                <h2 class="winner"></h2>
+                <h2 style="font-size: 1.3em; color: white; font-weight: bold;">Press f5 to play again</h2>
+            </div>
+        </div>
+        <div class="play-game-container ">
+            <button type="button" id="start-game-button">Start Game</button>
+            <h2 id="round-outcome-h2" class="player-info-text"> round outcome</h2>
+        </div>
+        <div class="footer-container">
+            <div class="links-container">
+                <div> Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market"> Vectors Market </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                <div>Dice code taken from <a href="https://codesandbox.io/s/animated-3d-dice-roll-forked-s41tvp?file=/styles.css" title="codesandbox">codesandbox</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
